@@ -73,5 +73,5 @@ votes.sort.each{ |a|
   puts "#{a[0]} > #{a[1]}"
 }
 
-# $browser.close
+$browser.close
 puts "Done."
