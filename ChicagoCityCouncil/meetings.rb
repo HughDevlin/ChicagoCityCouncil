@@ -1,3 +1,4 @@
+# HJD 2012-06-21
 require "rubygems"
 require "watir-webdriver"
 
