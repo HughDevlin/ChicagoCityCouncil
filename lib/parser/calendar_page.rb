@@ -1,4 +1,4 @@
-require "parser/page"
+require 'lib/parser/page'
 
 class CalendarPage < Page
   def initialize

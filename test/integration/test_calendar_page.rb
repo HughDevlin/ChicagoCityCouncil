@@ -1,4 +1,5 @@
-require 'parser/calendar_page'
+require 'test/unit'
+require 'lib/parser/calendar_page'
 
 class TestCalendarPage < Test::Unit::TestCase
   def test_get_meetings
