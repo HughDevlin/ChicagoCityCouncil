@@ -1,23 +1,14 @@
-<<<<<<< HEAD
 require_relative "page"
-=======
-require "parser/page"
->>>>>>> 444176d4b1fe2fb5373ca375095512d05b819565
 require "watir-webdriver/wait"
 
 class MeetingPage < Page
+  
   def votes
     votes = Hash.new
-<<<<<<< HEAD
     table = browser.table(:class, "rgMasterTable")
     rows = table.rows
     rows = rows[1..-1]
     rows = rows.find_all{ |row| row.cells.length > 7 }
-=======
-    # all years
-    table = browser.table(:class, "rgMasterTable")
-    rows = table.rows.find_all{ |row| row.cells.length > 7 }[1..-1]
->>>>>>> 444176d4b1fe2fb5373ca375095512d05b819565
     rows.each { |row|
       cells = row.cells
       document = cells[0].text.strip
@@ -38,10 +29,4 @@ class MeetingPage < Page
   end
 
 end
-<<<<<<< HEAD
 
-page = MeetingPage.new("http://chicago.legistar.com/MeetingDetail.aspx?ID=194860&GUID=A3B1120F-B620-4A26-A9AB-E8E4A8A8254F&Options=info|&Search=")
-votes = page.votes
-puts votes.count
-=======
->>>>>>> 444176d4b1fe2fb5373ca375095512d05b819565
