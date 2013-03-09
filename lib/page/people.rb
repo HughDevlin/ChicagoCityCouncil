@@ -1,6 +1,5 @@
 require 'nokogiri'
 require 'open-uri'
-require 'multimap'
 
 require_relative "../model/person"
 

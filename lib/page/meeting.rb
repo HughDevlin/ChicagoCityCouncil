@@ -1,5 +1,3 @@
-require "watir-webdriver/wait"
-
 require_relative "page"
 require_relative "../model/legislation"
 

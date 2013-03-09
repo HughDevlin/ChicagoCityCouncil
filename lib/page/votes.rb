@@ -1,6 +1,4 @@
 require 'nokogiri'
-require "watir-webdriver/wait"
-require_relative "page"
 
 module ChicagoCityCouncil
   class VotesPage
